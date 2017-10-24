@@ -6,8 +6,8 @@
 
 <body>
     <div class="timeline-container timeline-theme-1">
-        <div id="timeline" class="timeline js-timeline" data-bind="foreach: timeline_entries">
-            <div data-bind="data-time: BreachDate" data-bind="text: Description">
+        <div id="timeline" class="timeline js-timeline" data-bind="foreach: TimelineEntries">
+            <div data-bind="html : Description, attr: {'data-time': BreachDate }">
             </div>
         </div>
     </div>
